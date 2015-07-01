@@ -8,7 +8,8 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Logary.ConsoleApp</RootNamespace>
     <AssemblyName>Logary.ConsoleApp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,6 +53,11 @@
     <ProjectReference Include="..\..\src\FSharp.Actor-logary\src\FSharp.Actor\FSharp.Actor-logary.fsproj">
       <Project>{AA4BC25B-04F7-4B39-BF28-0B0058193ED9}</Project>
       <Name>FSharp.Actor-logary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\targets\Logary.Targets.Logentries\Logary.Targets.Logentries.fsproj">
+      <Name>Logary.Targets.Logentries</Name>
+      <Project>{7ed41c0d-f9ed-43e9-be10-6e7457b90235}</Project>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\src\targets\Logary.Targets.Riemann\Logary.Targets.Riemann.fsproj">
       <Project>{CC87925C-E4F2-4386-A322-8BC088DE7B33}</Project>
