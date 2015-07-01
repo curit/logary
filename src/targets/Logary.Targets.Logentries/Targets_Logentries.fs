@@ -127,7 +127,6 @@ module internal Impl =
       return! running { client = client; stream = stream }
       }
 
-
      and running ({ client = client; stream = stream } as state) = async {
       let munge = munge conf.token conf.useHttp 
       let! msg, _ = inbox.Receive()
